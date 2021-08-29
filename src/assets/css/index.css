@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-gray-800 leading-tight;
+    }
+    h1 {
+        @apply text-3xl font-semibold;
+    }
+    h2 {
+        @apply text-xl font-semibold;
+    }
+    h3 {
+        @apply text-lg font-semibold;
+    }
+    label {
+        @apply block mx-2;
+    }
+    input, textarea {
+        @apply border border-gray-800 rounded p-2 mx-2;
+    }
+    button {
+        @apply bg-green-300 p-2 m-2 rounded;
+        @apply hover:bg-green-400;
+    }
+    table {
+        @apply border-collapse;
+    }
+    thead tr {
+        @apply bg-green-100;
+    }
+    tbody tr {
+        @apply hover:bg-gray-100;
+    }
+    th, td {
+        @apply border border-gray-800 p-2;
+    }
+}
+
+.nav {
+    @apply bg-gray-100 p-2;
+    @apply fixed inset-0 z-10 w-auto m-2 rounded overflow-y-auto;
+    @apply sm:static sm:flex-none sm:block sm:w-60;
+}
+
