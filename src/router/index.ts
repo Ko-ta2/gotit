@@ -4,7 +4,7 @@ import Login from "@/views/admin/Login.vue";
 import AdminList from "@/views/admin/AdminList.vue";
 import AdminDetail from "@/views/admin/AdminDetail.vue";
 
-import { initFirebaseApp, getLoginUser } from '@/lib/firebase';
+// import { initFirebaseApp, getLoginUser } from '@/lib/firebase';
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -47,7 +47,8 @@ const router = createRouter({
 
 router.beforeEach(async (to, from) => {
   if(to.meta.requiresAuth) {
-    const isAuthenticated = await getLoginUser();
+    // const isAuthenticated = await getLoginUser();
+    const isAuthenticated = true
     if(!isAuthenticated) router.push({name: "Login"});
   }
 });

@@ -13,14 +13,14 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
-import { logOutDefault } from "@/lib/firebase"
+// import { logOutDefault } from "@/lib/firebase"
 
 export default defineComponent({
   setup(props) {
     const router = useRouter();
 
     const logOut = async () => {
-      await logOutDefault();
+      // await logOutDefault();
       router.push({name: "Login"});
     }
 

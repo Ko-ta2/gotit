@@ -14,7 +14,7 @@
 import { defineComponent, reactive, onMounted } from "vue";
 import BaseLayout from "@/components/layout/BaseLayout.vue";
 import Card from "@/components/Card.vue";
-import { getContents } from "@/lib/firebase";
+// import { getContents } from "@/lib/firebase";
 import { DocumentData } from "firebase/firestore";
 
 export default defineComponent({
