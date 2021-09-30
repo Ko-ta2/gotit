@@ -53,7 +53,7 @@ import { defineComponent, onMounted, reactive, toRefs } from "vue";
 import { useRouter } from "vue-router";
 import AdminLayout from "@/components/layout/admin/AdminLayout.vue";
 import { Content } from "@/types";
-import { addContent, getLoginUser, getContent } from "@/lib/firebase"
+// import { addContent, getLoginUser, getContent } from "@/lib/firebase"
 import { User } from "firebase/auth";
 import { DocumentData } from "firebase/firestore";
 

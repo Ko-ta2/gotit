@@ -33,7 +33,7 @@
 import { defineComponent, onMounted, reactive } from "vue";
 import { useRouter } from "vue-router";
 import AdminLayout from "@/components/layout/admin/AdminLayout.vue";
-import { getContents, deleteContent } from "@/lib/firebase";
+// import { getContents, deleteContent } from "@/lib/firebase";
 import { DocumentData } from "firebase/firestore";
 
 export default defineComponent({

@@ -34,7 +34,7 @@
 <script lang="ts">
 import { defineComponent, reactive } from "vue";
 import { useRouter } from "vue-router";
-import { logInWithEmailAndPassword } from "@/lib/firebase";
+// import { logInWithEmailAndPassword } from "@/lib/firebase";
 
 export default defineComponent({
   components: {},
